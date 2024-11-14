@@ -1,0 +1,102 @@
+@font-face {
+    font-family: centuryGothic;
+    src: url(centurygothic.ttf);
+}
+
+
+html{
+padding-top:0px;
+margin-top: 0px;
+background-color: black;
+background-image: linear-gradient(hsl(0,0%,30%) 5%,hsl(0,0%,80%) 5% 95%);
+background-size:4rem 20px ;
+height: 100vh;
+padding: 0px;
+margin: 0px;
+}
+
+body{
+    font-family: centuryGothic;
+    margin: 0px;
+    height: 100%;
+    width: 100%;
+    display: flex; 
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+
+/*
+.wrapper-text .background{
+    position: absolute;
+    background-color: hsl(0,0%,90%);
+    opacity: 0.5;
+    z-index: -1;
+    top:0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+}*/
+
+.wrapper-text{
+    position: relative;
+    padding: 40px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-shadow: 0 0 10px hsl(0,0%,60%);
+}
+
+.wrapper-text h1{
+    font-size: 150px;
+    margin: 0;
+    padding-bottom: 0;
+    display: block;    
+
+}
+
+
+.wrapper-text h2{
+    margin: 0;
+    font-size: 100px;
+}
+
+.schools a{
+    outline: none;
+    border: none;
+    text-decoration: none;
+}
+
+.schools h2{
+    font-size: 60px;
+    font-weight: 100;
+    margin: 0;
+    text-shadow: 0 0 10px hsl(0,0%,70%);
+    color: hsl(0,0%,20%);
+    padding: 10px;
+    transition: 0.2s;
+}
+
+.schools h2:hover{
+    cursor: grab;
+    transition: 0.2s;
+    margin-left: 10px;
+    color: hsl(225, 100%, 60%);
+}
+
+.schools h3{
+    font-size: 50px;
+    font-weight: 100;
+    margin: 0;
+    text-shadow: 0 0 10px hsl(0,0%,70%);
+    color: hsl(0,0%,20%);
+    padding: 10px;
+    transition: 0.2s;
+}
+
+.schools h3:hover{
+    cursor: grab;
+    transition: 0.2s;
+    
+    color: hsl(225, 100%, 60%);
+}
