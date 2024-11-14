@@ -166,6 +166,11 @@ body{
     padding-left: 30px;
 }
 
+.user-review button:hover > h2{
+    transition: 0.2s;
+    letter-spacing: 2px;
+}
+
 #reviews{
     grid-column-start: 1;
     grid-column-end: 3;
