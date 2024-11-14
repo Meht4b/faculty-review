@@ -22,7 +22,10 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-around;
     margin-top: 30px;
+    margin-bottom: 40px;
+    padding-bottom: 40px;
 }
 
 
@@ -86,6 +89,7 @@ body{
     flex-direction: column;
     gap: 5px;
     border-radius: 15px;
+    margin-bottom: 40px;
 }
 
 .teacher{
@@ -134,6 +138,7 @@ body{
 .teacher .bottom-teacher{
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
+    
 }
 
 .teacher:hover .teacher-background{
@@ -166,4 +171,14 @@ body{
 .teacher-attr:hover h2{
     color: black;
     
+}
+
+a{
+    text-decoration: none;
+}
+
+#padding-fix{
+    height: 300px;
+    width: 400px;
+    opacity: 0;
 }
