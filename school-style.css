@@ -1,0 +1,145 @@
+@font-face {
+    font-family: centuryGothic;
+    src: url(centurygothic.ttf);
+}
+
+html{
+    padding-top:0px;
+    margin-top: 0px;
+    background-color: black;
+    background-image: linear-gradient(hsl(0,0%,30%) 5%,hsl(0,0%,80%) 5% 95%);
+    background-size:4rem 20px ;
+    height: 100vh;
+    padding: 0px;
+    margin: 0px;
+    }
+    
+body{
+    font-family: centuryGothic;
+    margin: 0px;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+}
+
+
+
+.search-bar{
+    width: 60vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: hsl(0,0%,90%);
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 0 10px hsl(0,0%,40%);
+    transition: 0.2s;
+    border: solid 1px hsl(0,0%,90%);
+    margin-bottom: 40px;
+}
+
+.search-bar:hover{
+    display: flex;
+    align-items: center;
+    
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 0 10px hsl(0,0%,45%);
+}
+
+
+.search-bar input{
+    width: 80%;
+    border: none;
+    font-family: centuryGothic;
+    background-color: hsl(0,0%,90%);
+}
+
+.search-bar input:enabled{
+    border: none;
+    outline: none;
+    font-size:20px;
+
+}
+
+.search-bar img{
+    opacity: 0.5;
+    transition: 0.2s;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+    height: 20px;
+}
+
+.search-bar img:hover{
+    opacity: 1;
+    transform: 0.2s;
+}
+
+#teachers{
+    
+    width: 80vw;
+    gap: 2px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.teacher{
+    display: grid;
+    grid-template-columns: 20vw 20vw 20vw 10vw 10vw;
+    align-items: center;
+    position: relative;
+    padding-left: 20px;
+    padding-right: 10px;
+    border-radius: 5px;
+    margin: 10px;
+}
+
+.teacher h2{
+    text-shadow: 0 0 10px hsl(0,0%,60%);
+    font-weight: 100;
+    color: hsl(0,0%,30%);
+    
+}
+
+.teacher-attr-background{
+    
+}
+
+.teacher-background{
+    transition: 0.2s;
+    position: absolute;
+    border-radius: 5px;
+    width: 100%;
+    height: 100%;
+    background-color: hsl(0,0%,90%);
+    z-index: -1;
+    box-shadow: 0 0 10px hsl(0,0%,40%);
+    border: solid 1px hsl(0,0%,90%);
+    opacity: 0.9;
+}
+
+.teacher:hover{
+    cursor: grab;
+}
+
+.teacher:hover .teacher-background{
+    position: absolute;
+    border-radius: 5px;
+    width: 100%;
+    height: 100%;
+    background-color: hsl(0,0%,100%);
+    z-index: -1;
+    box-shadow: 0 0 10px hsl(0,0%,40%);
+    border: solid 1px hsl(0,0%,90%);
+    opacity: 1;
+}
+
+.teacher:hover h2{
+    
+    color: hsl(225, 100%, 60%);
+}
