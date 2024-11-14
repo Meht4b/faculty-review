@@ -35,7 +35,7 @@ body{
     background-color: hsl(0,0%,90%);
     border-radius: 10px;
     padding: 10px;
-    box-shadow: 0 0 10px hsl(0,0%,40%);
+    box-shadow: 0 0 10px hsl(0,0%,70%);
     transition: 0.2s;
     border: solid 1px hsl(0,0%,90%);
     margin-bottom: 40px;
@@ -81,16 +81,17 @@ body{
 
 #teachers{
     background-color: hsl(0,0%,80%);
-    width: 80vw;
+    width: 90vw;
     display: flex;
     flex-direction: column;
     gap: 5px;
+    border-radius: 15px;
 }
 
 .teacher{
     z-index: 1;
     display: grid;
-    grid-template-columns: 20vw 20vw 20vw 10vw 10vw;
+    grid-template-columns: 15vw 15vw 10vw 10vw 10vw 10vw 10vw 10vw;
     align-items: center;
     position: relative;
     padding-left: 20px;
@@ -150,10 +151,19 @@ body{
     color: #3366ff;
 }
 
+.teacher-attr{
+    position: sticky;
+    top:0;
+    z-index: 10;
+    box-shadow: 0 0px 10px hsl(0,0%,70%);
+}
+
 .teacher-attr h2{
     color: black;
+    
 }
 
 .teacher-attr:hover h2{
-    color: hsl(0,0%,30%);
+    color: black;
+    
 }
