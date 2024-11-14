@@ -27,6 +27,7 @@ body{
 
 
 
+
 /*
 .wrapper-text .background{
     position: absolute;
@@ -57,8 +58,9 @@ body{
 
 
 .wrapper-text h2{
-    margin: 0;
-    font-size: 100px;
+    margin: 10px;
+    font-size: 20px;
+    font-weight: 300;
 }
 
 .schools a{
@@ -99,4 +101,53 @@ body{
     transition: 0.2s;
     
     color: hsl(225, 100%, 60%);
+}
+
+.search-bar{
+    display: flex;
+    align-items: center;
+    background-color: hsl(0,0%,90%);
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 0 10px hsl(0,0%,40%);
+    transition: 0.2s;
+    border: solid 1px hsl(0,0%,90%);
+}
+
+.search-bar:hover{
+    display: flex;
+    align-items: center;
+    
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 0 10px hsl(0,0%,45%);
+}
+
+
+.search-bar input{
+    width: 60vw;
+    border: none;
+    font-family: 'Poppins';
+    background-color: hsl(0,0%,90%);
+}
+
+.search-bar input:enabled{
+    border: none;
+    outline: none;
+    font-size:20px;
+
+}
+
+.search-bar img{
+    opacity: 0.5;
+    transition: 0.2s;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+    height: 20px;
+}
+
+.search-bar img:hover{
+    opacity: 1;
+    transform: 0.2s;
 }
