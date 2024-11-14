@@ -1,0 +1,97 @@
+@font-face {
+    font-family: centuryGothic;
+    src: url(centurygothic.ttf);
+}
+
+html{
+    padding-top:0px;
+    margin-top: 0px;
+    background-color: black;
+    background-image: linear-gradient(hsl(0,0%,30%) 5%,hsl(0,0%,80%) 5% 95%);
+    background-size:4rem 20px ;
+    height: 100vh;
+    padding: 0px;
+    margin: 0px;
+    font-family: centuryGothic;
+}
+
+body{
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+    
+#login-container{
+    display: flex;
+    flex-direction: column;
+    background-color: hsl(0,0%,80%);
+    padding: 40px;
+    padding-top: 0px;
+    box-shadow: 0 0 10px hsl(0,0%,50%);
+}
+
+#login-title{
+    font-size: 30px;
+    margin-top: 0;
+    padding-top: 0px;
+}
+
+.loginForm{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.loginForm h2{
+    font-weight: 200;
+    padding:0px;
+    margin: 0px;
+    font-size: 25px;
+}
+
+input{
+    outline: none;
+    border: none;
+    box-shadow: 0 0 10px hsl(0,0%,70%);
+    background-color: hsl(0,0%,90%);
+    border-radius: 3px;
+    font-weight: 300;
+    font-size: 25px;
+    padding: 5px;
+    font-family: centuryGothic;
+    border: solid 1px hsl(0,0%,70%);
+    padding-left: 10px;
+}
+
+a{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    text-decoration: none;
+}
+
+button{
+    width: 50%;
+    border-radius: 3px;
+    border: solid 1px hsl(0,0%,70%);
+    box-shadow: 0 0 10px hsl(0,0%,70%);
+    font-size: 30px;
+    font-family: centuryGothic;
+    padding: 10px;
+    transition: 0.2s;
+    font-weight: 600;
+}
+
+button:hover{
+    transition: 0.2s;
+    transform: scale(110%);
+}
