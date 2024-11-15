@@ -95,4 +95,5 @@ button:hover{
     transition: 0.2s;
     transform: scale(110%);
     cursor: grab;
+    color: #3366ff;
 }
