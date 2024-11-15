@@ -87,7 +87,6 @@ body{
     width: 90vw;
     display: flex;
     flex-direction: column;
-    gap: 5px;
     border-radius: 15px;
     margin-bottom: 40px;
 }
@@ -104,7 +103,7 @@ body{
 }
 
 .teacher h2{
-    text-shadow: 0 0 10px hsl(0,0%,60%);
+
     font-weight: 100;
     color: hsl(0,0%,30%);
     
