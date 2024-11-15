@@ -151,7 +151,7 @@ body{
 }
 
 .teacher:hover h2{
-    
+    text-shadow:0 0 5px hsl(0,0%,70%);
     color: #3366ff;
 }
 
